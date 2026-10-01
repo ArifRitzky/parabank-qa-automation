@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QA Automation Dashboard: ParaBank</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h2>QA AUTOMATION DASHBOARD</h2>
+        </div>
+        <div>
+            <button id="btn-run">Run All Scenarios</button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>ParaBank: Registration &amp; Login</h1>
+            <p>Selenium + pytest suite against the public ParaBank demo (parabank.parasoft.com)</p>
+        </section>
+
+        <section>
+            <div>
+                <h3>Total (last run)</h3>
+                <p id="metric-total">0</p>
+            </div>
+            <div>
+                <h3>Passed</h3>
+                <p id="metric-pass">0</p>
+            </div>
+            <div>
+                <h3>Failed</h3>
+                <p id="metric-fail">0</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Last Test Run</h3>
+            <p id="status-line">No run yet. Click "Run All Scenarios".</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Test ID</th>
+                        <th>Scenario</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
